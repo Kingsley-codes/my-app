@@ -20,7 +20,7 @@ export default function Index() {
             <Text className="font-semibold text-slate-950">bg-emerald-400</Text>
           </View>
           <View className="rounded-full border border-slate-600 px-4 py-2">
-            <Text className="font-semibold text-slate-700">rounded-full</Text>
+            <Text className="font-semibold text-slate-200">rounded-full</Text>
           </View>
         </View>
       </View>
