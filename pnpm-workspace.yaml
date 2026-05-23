@@ -1,5 +1,5 @@
 allowBuilds:
-  msgpackr-extract: set this to true or false
+  msgpackr-extract: true
 minimumReleaseAgeExclude:
   - '@expo/cli@56.1.11'
   - '@expo/config-plugins@56.0.8'
