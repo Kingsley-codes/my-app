@@ -1,9 +1,13 @@
 import { useAuth } from "@clerk/expo";
 import { Redirect, Tabs } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
+import { useColorScheme } from "react-native";
 
 export default function TabLayout() {
   const { isSignedIn, isLoaded } = useAuth();
+
+  const colorScheme = useColorScheme();
+  const isDarkMode = colorScheme === "dark";
 
   if (!isLoaded) return null;
 
@@ -16,8 +20,8 @@ export default function TabLayout() {
       screenOptions={({ route }) => ({
         headerShown: false,
         tabBarShowLabel: true,
-        tabBarActiveTintColor: "#000",
-        tabBarInactiveTintColor: "#888",
+        tabBarActiveTintColor: isDarkMode ? "#c5c0ff" : "#584de0",
+        tabBarInactiveTintColor: isDarkMode ? "#888" : "#ccc",
         tabBarIcon: ({ focused, size, color }) => {
           let iconName: keyof typeof Ionicons.glyphMap = "ellipse-outline";
 

@@ -1,9 +1,12 @@
+import SafeAreaView from "@/components/SafeAreaView";
 import { View, Text } from "react-native";
 
 export default function ExpensePage() {
   return (
-    <View>
-      <Text>expense</Text>
-    </View>
+    <SafeAreaView>
+      <View>
+        <Text>expense</Text>
+      </View>
+    </SafeAreaView>
   );
 }
