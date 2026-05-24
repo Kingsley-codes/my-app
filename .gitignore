@@ -45,3 +45,6 @@ example
 .vscode/
 .expo/
 .pnpm-store/
+
+
+.env
